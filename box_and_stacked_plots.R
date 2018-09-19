@@ -166,6 +166,8 @@ stacked_plot <- function(sleep_var){
     komp2_ana[,3] <- ifelse(komp2_ana$final_unscaled.Genotype %in% sleep_var_genes, "sig", "ns")
     colnames(komp2_ana)[3] <- "Significance"
   }
+  #In the following code the dimensions of the output image file need to be specified somehow
+  #And quality of plots needs to be defined.
   
   #Prepare plot
   color_palette <- c("cornflowerblue","red")
